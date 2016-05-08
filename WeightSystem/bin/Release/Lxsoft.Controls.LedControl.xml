@@ -1,0 +1,374 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lxsoft.Controls.LedControl</name>
+    </assembly>
+    <members>
+        <member name="T:LxControl.LxLedControl">
+            <summary>
+            A control that acts like a LED displayer
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.WIDTHHEIGHTRATIO">
+            <summary>
+            The ratio of the width to the height of one character.
+            </summary>
+        </member>
+        <member name="M:LxControl.LxLedControl.#ctor">
+            <summary>
+            Construct one LxLedControl instance.
+            </summary>
+        </member>
+        <member name="M:LxControl.LxLedControl.Dispose(System.Boolean)">
+            <summary>
+            Destructor
+            </summary>
+            <param name="disposing">whether this method is called by Dispose()</param>
+        </member>
+        <member name="M:LxControl.LxLedControl.DrawSegment(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Color,System.Int32,System.Single,System.Single,System.Single)">
+            <summary>
+            Paint one segment.
+            </summary>
+            <param name="g">The graphics object which will be painted on.</param>
+            <param name="rectBound">The paint rectangle.</param>
+            <param name="colSegment">segment color.</param>
+            <param name="nIndex">the segment index.</param>
+            <param name="bevelRate">corner rate.</param>
+            <param name="segmentWidth">segment width.</param>
+            <param name="segmentInterval">segment interval.</param>
+        </member>
+        <member name="M:LxControl.LxLedControl.DrawSingleChar(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Color,System.Char,System.Single,System.Single,System.Single)">
+            <summary>
+            Paint one character.
+            </summary>
+            <param name="g">The graphics object which will be painted on.</param>
+            <param name="rectBound">The paint rectangle.</param>
+            <param name="colCharacter">Character color.</param>
+            <param name="character">The character to paint.</param>
+            <param name="bevelRate">The bevel rate.</param>
+            <param name="segmentWidth">segment width.</param>
+            <param name="segmentInterval">segment interval.</param>
+        </member>
+        <member name="M:LxControl.LxLedControl.DrawSingleCharWithFadedBk(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Color,System.Drawing.Color,System.Char,System.Single,System.Single,System.Single)">
+            <summary>
+            Paint one character with faded background
+            </summary>
+            <param name="g">The graphics object which will be painted on</param>
+            <param name="rectBound">The paint rectangle</param>
+            <param name="colCharacter">Character color</param>
+            <param name="colFaded">Faded background color</param>
+            <param name="character">Character to paint</param>
+            <param name="bevelRate">bevel rate</param>
+            <param name="segmentWidth">width of the segment</param>
+            <param name="segmentInterval">Interval of the segment</param>
+        </member>
+        <member name="M:LxControl.LxLedControl.DestoryCache">
+            <summary>
+            Destory cache
+            </summary>
+        </member>
+        <member name="M:LxControl.LxLedControl.CreateCache(System.Drawing.Rectangle,System.Single,System.Single,System.Single)">
+            <summary>
+            Create cache
+            </summary>
+            <param name="rectBound">The bound rectangle</param>
+            <param name="bevelRate">Bevel rate</param>
+            <param name="segmentWidth">Width of the segment</param>
+            <param name="segmentInterval">Interval between segments</param>
+        </member>
+        <member name="M:LxControl.LxLedControl.DrawChars(System.Drawing.Graphics,System.Single,System.Single)">
+            <summary>
+            Draw character(s).
+            </summary>
+        </member>
+        <member name="M:LxControl.LxLedControl.CalculateDrawingParams(System.Single@,System.Single@)">
+            <summary>
+            Calculate the width of the segment and the interval between segments.
+            </summary>
+            <param name="segmentWidth">[out] the width of the segment.</param>
+            <param name="segmentInterval">[out] the interval between segments.</param>
+        </member>
+        <member name="M:LxControl.LxLedControl.DrawRoundRect(System.Drawing.Graphics,System.Drawing.Rectangle,System.Single,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Draw a round rectangle at the specified position
+            </summary>
+            <param name="g">Graphics object</param>
+            <param name="rect">The bound rectangle</param>
+            <param name="radius">The radius of the round corner in pixels</param>
+            <param name="col1">The first color</param>
+            <param name="col2">The second color(ignored if no gradient is used)</param>
+            <param name="bGradient">Whether to use gradient color</param>
+            <param name="colBorder">The color of the border</param>
+            <param name="nBorderWidth">The width of the border</param>
+            <param name="bDrawBorder">Whether to draw the border</param>
+        </member>
+        <member name="M:LxControl.LxLedControl.DrawNormalRect(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Draw a normal rectangle
+            </summary>
+            <param name="g">Graphcis object</param>
+            <param name="rect">The bound rectangle</param>
+            <param name="col1">The first color</param>
+            <param name="col2">The second color(ignored if no gradient is used)</param>
+            <param name="colBorder">The border color</param>
+            <param name="nBorderWidth">The width of the border</param>
+            <param name="bGradient">Whether to use gradient color</param>
+            <param name="bDrawBorder">Whether to draw border</param>
+        </member>
+        <member name="M:LxControl.LxLedControl.DrawBackground(System.Drawing.Graphics)">
+            <summary>
+            Draw background of the control
+            </summary>
+            <param name="g">The graphics object</param>
+        </member>
+        <member name="M:LxControl.LxLedControl.DrawHighlight(System.Drawing.Graphics)">
+            <summary>
+            Draw highlight of the control
+            </summary>
+            <param name="g">The graphics object</param>
+        </member>
+        <member name="M:LxControl.LxLedControl.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Paint the whole control.
+            </summary>
+            <param name="e">Painting parameter.</param>
+        </member>
+        <member name="M:LxControl.LxLedControl.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Do nothing in paint background
+            </summary>
+            <param name="pevent">Painting parameter</param>
+        </member>
+        <member name="M:LxControl.LxLedControl.OnSizeChanged(System.EventArgs)">
+            <summary>
+            On size changed
+            </summary>
+            <param name="e">Size change parameter</param>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_CachedPaths">
+            <summary>
+            The cached path information
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_bIsCacheBuild">
+            <summary>
+            Indicate whether the cached painting information is built.
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_nBorderWidth">
+            <summary>
+            Border width
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_colBorderColor">
+            <summary>
+            Border color
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_colFocusedBorderColor">
+            <summary>
+            Focused border color
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_nCornerRadius">
+            <summary>
+            The radius of the round corner of the background rectangle
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_nCharacterNumber">
+            <summary>
+            The total number of digits to display.
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_fBevelRate">
+            <summary>
+            The bevel rate of each segment.
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_colFadedColor">
+            <summary>
+            The faded color.
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_colCustomBk1">
+            <summary>
+            The custom background color
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_colCustomBk2">
+            <summary>
+            The custom background color
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_fWidthSegWidthRatio">
+            <summary>
+            The ratio of the segment width to the width of one character.
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_fWidthIntervalRatio">
+            <summary>
+            The ratio of the segment interval to the width of one character.
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_enumAlign">
+            <summary>
+            How the displaying text or value is aligned.
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_bRoundRect">
+            <summary>
+            If the background was round rectangle
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_bGradientBackground">
+            <summary>
+            If the background was filled in gradient colors
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_bShowHighlight">
+            <summary>
+            Whether to draw high light area
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_nHighlightOpaque">
+            <summary>
+            The opaque value of highlight, 0 is transparent, 255 is solid
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_smoothingMode">
+            <summary>
+            The smoothing mode.
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.m_italicMode">
+            <summary>
+            The italic text mode.
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.UseItalicStyle">
+            <summary>
+            Get or set whether the italic text style is turned on.
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.UseSmoothingMode">
+            <summary>
+            Get or set whether the smoothing mode is turned on.
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.BorderWidth">
+            <summary>
+            Get or set the width of the border
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.BorderColor">
+            <summary>
+            Get or set the border color
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.FocusedBorderColor">
+            <summary>
+            Ger or set the border color when the control got focus.
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.HighlightOpaque">
+            <summary>
+            Get or set the opaque value of the highlight
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.ShowHighlight">
+            <summary>
+            Get or set whether to show highlight area on the control
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.CornerRadius">
+            <summary>
+            Get or set the corner radius for the background rectangle.
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.GradientBackground">
+            <summary>
+            Get or set if the background was filled in gradient colors
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.BackColor_1">
+            <summary>
+            Get or set the first custom background color
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.BackColor_2">
+            <summary>
+            Get or set the second custom background color
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.RoundCorner">
+            <summary>
+            Get or set the background bound style
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.SegmentIntervalRatio">
+            <summary>
+            Get or set the segment interval ratio
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.TextAlignment">
+            <summary>
+            Get or set the aligment of the text
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.SegmentWidthRatio">
+            <summary>
+            Get or set the segment width ratio
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.TotalCharCount">
+            <summary>
+            Get or set the total number of characters to display
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.BevelRate">
+            <summary>
+            Get or set the bevel rate of each segment
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.FadedColor">
+            <summary>
+            Get or set the color of background characters
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.Text">
+            <summary>
+            Get or set the text of the control
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.BackgroundImage">
+            <summary>
+            Does not support background image
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.BackgroundImageLayout">
+            <summary>
+            Does not support background image layout
+            </summary>
+        </member>
+        <member name="P:LxControl.LxLedControl.Font">
+            <summary>
+            Does not support font
+            </summary>
+        </member>
+        <member name="T:LxControl.LxLedControl.Alignment">
+            <summary>
+            Specify how the text or value is aligned.
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.Alignment.Left">
+            <summary>
+            The text or value will align on the left side of the control.
+            </summary>
+        </member>
+        <member name="F:LxControl.LxLedControl.Alignment.Right">
+            <summary>
+            The text or value will align on the right side of the control.
+            </summary>
+        </member>
+    </members>
+</doc>

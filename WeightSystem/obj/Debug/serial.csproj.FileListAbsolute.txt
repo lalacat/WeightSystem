@@ -1,0 +1,11 @@
+d:\documents\visual studio 2013\Projects\serial\serial\bin\Debug\serial.exe.config
+d:\documents\visual studio 2013\Projects\serial\serial\obj\Debug\serial.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2013\Projects\serial\serial\obj\Debug\serial.MainWindow.resources
+d:\documents\visual studio 2013\Projects\serial\serial\obj\Debug\serial.Properties.Resources.resources
+d:\documents\visual studio 2013\Projects\serial\serial\obj\Debug\serial.csproj.GenerateResource.Cache
+d:\documents\visual studio 2013\Projects\serial\serial\bin\Debug\serial.exe
+d:\documents\visual studio 2013\Projects\serial\serial\bin\Debug\serial.pdb
+d:\documents\visual studio 2013\Projects\serial\serial\obj\Debug\serial.exe
+d:\documents\visual studio 2013\Projects\serial\serial\obj\Debug\serial.pdb
+d:\documents\visual studio 2013\Projects\serial\serial\bin\Debug\Lxsoft.Controls.LedControl.dll
+d:\documents\visual studio 2013\Projects\serial\serial\bin\Debug\Lxsoft.Controls.LedControl.xml

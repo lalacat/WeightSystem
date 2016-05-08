@@ -1,0 +1,17 @@
+D:\Documents\Visual Studio 2013\Projects\serial\serial\bin\Release\serial.exe.config
+D:\Documents\Visual Studio 2013\Projects\serial\serial\bin\Release\serial.exe
+D:\Documents\Visual Studio 2013\Projects\serial\serial\bin\Release\serial.pdb
+D:\Documents\Visual Studio 2013\Projects\serial\serial\bin\Release\Lxsoft.Controls.LedControl.dll
+D:\Documents\Visual Studio 2013\Projects\serial\serial\bin\Release\Lxsoft.Controls.LedControl.xml
+D:\Documents\Visual Studio 2013\Projects\serial\serial\obj\Release\serial.MainWindow.resources
+D:\Documents\Visual Studio 2013\Projects\serial\serial\obj\Release\serial.Properties.Resources.resources
+D:\Documents\Visual Studio 2013\Projects\serial\serial\obj\Release\serial.csproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2013\Projects\serial\serial\obj\Release\serial.exe
+D:\Documents\Visual Studio 2013\Projects\serial\serial\obj\Release\serial.pdb
+D:\Documents\Visual Studio 2013\Projects\serial\serial\obj\Release\serial.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2013\Projects\serial(finally)\serial\bin\Release\serial.exe.config
+D:\Documents\Visual Studio 2013\Projects\serial(finally)\serial\obj\Release\serial.exe
+D:\Documents\Visual Studio 2013\Projects\serial(finally)\serial\obj\Release\serial.pdb
+E:\MyGit\serial(finally)\serial\bin\Release\serial.exe.config
+E:\MyGit\serial(finally)\serial\obj\Release\serial.exe
+E:\MyGit\serial(finally)\serial\obj\Release\serial.pdb
